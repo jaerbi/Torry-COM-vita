@@ -1,17 +1,116 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1220px) {
+
+	.client_wrap .client {
+		width: 960px;
+	}
+
+	.autumn_top ul,
+ 	.automn_down ul {
+			align-items: center;
+			flex-direction: column;
+			flex-wrap: wrap;
+ 	}
+
+ 	.collection_wrap .brand ul {
+		width: 960px;
+	}
+
+	.feedback-wrap .feedback {
+		width: 100%;
+	}
+
+	.feedback ul  {
+		flex-direction: column;
+	}
+
+	.feedback-wrap .feedback ul li {
+		justify-content: center;
+	}
+
+	.handpicked {
+		flex-direction: column;
+ 	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.header-register .header-register__menu {
+		display: none;
+	}
+	.header-register .header-account__menu {
+		display: block;
+	}
+
+	.header_wrap .header-register {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.header_wrap .header-navigation{
+		flex-direction: column;
+	}
+
+	.header-navigation .header-navigation__menu, 
+	.header-navigation .header-navigation__logo,
+ 	.header-navigation .header-navigation__social {
+ 		width: 100%;
+ 	}
+
+ 	.client_wrap .client {
+ 		flex-direction: column;
+ 		align-items: center;
+ 		margin: 40px 0;
+ 	}
+ 	.client_hover {
+ 		margin-bottom: 20px;
+ 	}
+ 	.client .free__icn, .client .returns__icn, .client .support__icn {
+ 		display: none;
+ 	}
+
+ 	.free__text, .support__text {
+ 		height: 64px;
+ 		margin: 10px;
+ 	}
+
+ 	.returns__text {
+ 		height: 64px;
+ 		width: 150px;
+ 		margin: 10px 40px;
+ 	}
+ 	.client .free__text h4, .client .returns__text h4, .client .support__text h4 {
+ 		font-size: 20px;
+ 	}
+ 	.handpicked_box_midl {
+ 		width: 100%;
+ 	}
+	.order_pick {
+		order: -1;
+	}
+	main .collection_wrap .brand ul {
+		width: 100%;
+	}
+	.brand ul li {
+		margin: 10px;
+	}
+	.footer_content {
+		flex-wrap: wrap;
+	}
+
+	.collection_wrap .name_categories{
+		font-size: 22px;
+	}
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+	.collection_wrap .brand ul{
+		flex-direction: column;
+	}
 }
 
 /* Extra Small Devices, Phones */
