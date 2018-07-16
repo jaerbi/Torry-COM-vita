@@ -9,9 +9,22 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<!-- Vue JS Practic -->
+		<div id="vue-app">
+			<h1>
+				{{ greeting('Вечір') }}
+			</h1>
+			<p>
+				Ім'я: {{ name }}
+			</p>
+			<p>
+				Робота: {{ job }}
+			</p>
+		</div>
 		<!--Header-->
 		<header>
 			<div class="header_wrap">
@@ -20,7 +33,7 @@
 						<div class="phone_icn">
 							<img src="img/phone.png" alt="Phone">
 						</div>
-						<div class="phone_number">Call +001 555 555</div>
+						<div class="phone_number">Call +001 0985 555</div>
 					</div>
 					<nav class="header-account__menu display_none">
 						<ul>
@@ -392,6 +405,7 @@
 		</footer>
 
 	<!-- autoReload LiveReload-->
+	<script src="./js/app.js"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
